@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'SF-Pro-Display-Black';
+  src: url('../fonts/SF-Pro-Display-Black.otf');
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'SF-Pro-Display-Black';
+  font-size: small;
+  padding: 0;
+}
+li * {
+  color: rgb(136, 136, 136) !important;
+}
+.iPhone13im {
+  display: block;
+  margin: auto;
+
+  height: 500px;
+  margin-bottom: 0;
+  width: 1100px;
+}
+header {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  height: 44px;
+  width: 100vw;
+  margin-bottom: 100px;
+  top: 0;
+  z-index: 2;
+}
+.description {
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.columns {
+  justify-content: space-between;
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.iPad a {
+  color: white;
+}
+.iPhone13 a {
+  color: white;
+}
+
+.columns * {
+  margin-bottom: 10px;
+  color: rgb(105, 105, 105);
+}
+.endBot {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: rgb(114, 114, 114);
+}
+.endTop {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 10px auto 10px;
+  color: rgb(114, 114, 114);
+}
+A {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  color: black;
+}
+.menu {
+  display: none;
+}
+menu * {
+  color: rgb(136, 136, 136) !important;
+}
+A:hover {
+  text-decoration: underline;
+}
+h1 {
+  margin-top: 84px;
+  font-size: 54px;
+  text-align: center;
+}
+h2 {
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+}
+main * {
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.headerMenu {
+  margin: auto;
+  width: 996px;
+  display: flex;
+  height: 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMenuPart {
+  color: white;
+}
+.headerMenuMobile {
+  display: none;
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.mainImg {
+  display: block;
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  margin-bottom: 0;
+}
+.mainImgWatch {
+  display: block;
+  margin: auto;
+
+  width: 100vw;
+  height: 40vw;
+
+  margin-bottom: 0;
+}
+.iPhone {
+  height: 700px;
+  background-image: url('../iphone.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.iPhone13 {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../iphone13.jpg);
+  padding: 1px;
+  height: 719px;
+  background-color: #35283c;
+}
+.Watch {
+  background-image: url(../watch.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100vw 40vw;
+  padding-top: 50px;
+  height: 800px;
+}
+.Macbook {
+  background-position: 50% 90% !important;
+  background-image: url(../macbook.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  flex-grow: 1;
+  height: 636px;
+}
+.iPad {
+  background-position: 50% 90% !important;
+  height: 636px;
+  background-image: url(../ipad.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: black;
+  flex-grow: 1;
+}
+.section {
+  display: flex;
+}
+.sectionImg {
+  width: 631px;
+  height: 290px;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 996px) {
+  .headerMenu {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .iPad {
+    background-position: 50% 90%;
+    background-size: 110%;
+    height: 543px;
+  }
+  .Macbook {
+    background-position: 50% 90%;
+    background-size: 100%;
+    height: 543px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  ul:not(.menu) {
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s ease-out;
+  }
+  .menu > li {
+    border-bottom: solid rgba(0, 0, 0, 0.205) 1px;
+    width: 100vw;
+    margin: 10px;
+  }
+  .menu > li > ul > li {
+    margin-left: 20px;
+  }
+
+  .menu * {
+    font-size: 12px;
+  }
+  li:hover > ul {
+    max-height: 100vh;
+    transition: 1s ease-in;
+  }
+  .headerMenu {
+    display: none;
+  }
+  .headerMenuMobile {
+    margin: auto 10px;
+
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 1266px) {
+  .sectionImg {
+    width: 50vw;
+    height: 20vw;
+    margin: auto;
+    display: block;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section {
+    flex-direction: column;
+  }
+  .iPhone13im {
+    display: none;
+  }
+  .iPhone13 {
+    height: 548px;
+    background-position: center;
+    background-size: 734px 548px;
+    background-image: url('../iphone13img.jpg');
+    background-repeat: no-repeat;
+  }
+  .iPhone {
+    background-image: url(../iphone13low.jpg);
+    height: 570px;
+  }
+  .Watch {
+    background-size: 734px 548px;
+    height: 510px;
+    background-image: url(../watchlow.jpg);
+  }
+  .iPhone13 > h1 {
+    margin-top: 220px;
+  }
+  .Macbook {
+    background-position: 50% 90%;
+    height: 450px;
+    background-size: 70%;
+  }
+  .iPad {
+    background-position: 50% 90%;
+    height: 450px;
+    background-size: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .endBot {
+    width: 90vw !important;
+    flex-wrap: wrap;
+  }
+  .endTop {
+    width: 90vw !important;
+  }
+}
